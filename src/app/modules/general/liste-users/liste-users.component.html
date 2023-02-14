@@ -1,1 +1,27 @@
-<p>liste-users works!</p>
+<section>
+    <h2>Rest api output</h2>
+    <table align="center">
+      <thead>
+        <tr>
+            <th>Id</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="_users.length > 0; else noUsers">
+          <tr *ngFor="let user of _users">
+            <td>{{user.id}}</td>
+            <td>{{user.nom}}</td>
+            
+          </tr>
+        </ng-container>
+        <ng-template #noUsers>
+          <tr>
+            <td>No users found</td>
+          </tr>
+        </ng-template>
+      </tbody>
+    </table>
+    <h2>Fin du tableau</h2>
+  </section>
+  

@@ -1,6 +1,8 @@
 import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +18,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { HeaderComponent } from './modules/general/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ListeUsersComponent } from './modules/general/liste-users/liste-users.component';
+import { ApiService } from './api/api.service'; 
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import { ListeUsersComponent } from './modules/general/liste-users/liste-users.c
         WeatherComponent,
         PollutionComponent,
         ListeUsersComponent,
+        
         HeaderComponent
   ],
   imports: [
@@ -41,9 +45,12 @@ import { ListeUsersComponent } from './modules/general/liste-users/liste-users.c
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    NgbModule
+    NgbModule,
+    CommonModule, 
+    FormsModule
   ],
-  providers: [],
+  
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -17,8 +17,8 @@ const routes: Routes = [
   { path: 'pollution', component: PollutionComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'listerUsers', component: ListeUsersComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: 'compte/listerLesUser', component: ListeUsersComponent },
+ // { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
