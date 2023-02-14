@@ -1,0 +1,5 @@
+{ "/compte/listerLesUser" : { "secure" : "false" ,
+    "target" : "http://localhost:9999" } ,
+   "/login-api" : { "secure" : "false" ,
+      "target" : "http://localhost:27017" }  
+}

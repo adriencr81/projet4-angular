@@ -8,6 +8,7 @@ import { SignupComponent } from './modules/general/signup/signup.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
 import { WeatherComponent } from './modules/general/weather/weather.component';
 import { PollutionComponent } from './modules/general/pollution/pollution.component';
+import { ListeUsersComponent } from './modules/general/liste-users/liste-users.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'pollution', component: PollutionComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'listerUsers', component: ListeUsersComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
