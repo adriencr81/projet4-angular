@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, },
   { path: 'contact', component: ContactComponent },
   { path: 'meteoapi/all', component: WeatherComponent },
-  { path: 'pollution', component: PollutionComponent },
+  { path: 'pollutionapi/all', component: PollutionComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'compte/listerLesUser', component: ListeUsersComponent },
