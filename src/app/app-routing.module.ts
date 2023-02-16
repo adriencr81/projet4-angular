@@ -13,7 +13,7 @@ import { ListeUsersComponent } from './modules/general/liste-users/liste-users.c
 const routes: Routes = [
   { path: '', component: HomeComponent, },
   { path: 'contact', component: ContactComponent },
-  { path: 'weather', component: WeatherComponent },
+  { path: 'meteoapi/all', component: WeatherComponent },
   { path: 'pollution', component: PollutionComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
