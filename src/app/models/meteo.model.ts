@@ -1,3 +1,7 @@
 export class Meteo {
-    constructor(){}
+    constructor(
+        public id: string,
+        public ville: string,
+        public vent: number
+    ){}
 }

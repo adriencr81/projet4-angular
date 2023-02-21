@@ -16,9 +16,9 @@ export class PollutionComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     try {
       this._pollutions = await this.getPollutions();
-      console.log('Récupération des utilisateurs terminée.');
+      console.log('Récupération de la pollution terminée.');
     } catch (error) {
-      console.error('Une erreur est survenue lors de la récupération des utilisateurs : ', error);
+      console.error('Une erreur est survenue lors de la récupération de la pollution : ', error);
     }
   }
 

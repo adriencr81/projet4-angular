@@ -16,9 +16,9 @@ export class WeatherComponent implements OnInit{
   async ngOnInit(): Promise<void> {
     try {
       this._meteos = await this.getMeteos();
-      console.log('Récupération des utilisateurs terminée.');
+      console.log('Récupération de la météo terminée.');
     } catch (error) {
-      console.error('Une erreur est survenue lors de la récupération des utilisateurs : ', error);
+      console.error('Une erreur est survenue lors de la récupération de la météo : ', error);
     }
   }
 

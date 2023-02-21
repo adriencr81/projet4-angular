@@ -1,3 +1,6 @@
 export class Pollution {
-    constructor(){}
+    constructor(
+        public id: string,
+        public ville: string,
+    ){}
 }

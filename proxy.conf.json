@@ -1,5 +1,5 @@
 { "/compte/listerLesUser" : { "secure" : "false" ,
-    "target" : "http://localhost:9999" } ,
+    "target" : "http://localhost:8888" } ,
    "/meteoapi/all" : { "secure" : "false" ,
       "target" : "http://localhost:5082" }  ,
       "/pollutionapi/all" : { "secure" : "false" ,
